@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>practise</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Sub Task: </ion-label>
+    <ion-select placeholder="Select Task" (ionChange)="projectChangePhase1($event)">
+      <ion-select-option *ngFor="let assignProject of taskList" [value]="assignProject.tid">
+        {{assignProject.task}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item *ngIf="isShownphase1">
+    <ion-label>SubTask: </ion-label>
+    <ion-select placeholder="Select Task" (ionChange)="projectChangePhase2($event)">
+      <ion-select-option *ngFor="let subTask of subtaskList" [value]="subTask.tid">
+        {{subTask.task}}</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+
+
+
+
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form>
+    <h2 class="headertekst">Daily Diary</h2>
+
+    <img src="assets/images/aarveicon.png" alt="app icon" class="center" />
+
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">UserName:</ion-label>
+        <ion-input type="text" name="username" [(ngModel)]="postData.employeeid"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Password:</ion-label>
+        <ion-input type="Password" name="password" [(ngModel)]="postData.epassword"></ion-input>
+      </ion-item>
+      <ion-button (click)="getPostLogin()"> Login</ion-button>
+
+
+    </ion-list>
+  </form>
+
+
+
+</ion-content>

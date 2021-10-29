@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>UserProfile</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list *ngFor="let employees of employeeList">
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6" offset="3">
+          <ion-avatar>
+            <!-- <img [src]="employees.ProfileImg" /> -->
+            <img src="assets/images/employee.png" alt="app icon" class="center" />
+
+          </ion-avatar>
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <b>User Id:</b>
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.UserId}}</ion-label>
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <b>Employee Id: </b>
+          <!-- <ion-label class="headertekst">Employee Id: </ion-label> -->
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.EmployeeId}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <b>Employee Role: </b>
+
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.EmpRole}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <b>Employee Name: </b>
+
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.EmployeeName}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <b>Email:</b>
+
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.CompanyEmail}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6">
+          <b>Contact Number:</b>
+
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.ContactNumber}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="6" class="headertekst">
+          <b>Reporting Manager: </b>
+
+
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-label position="floating">{{employees.ReportingManager}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+
+
+
+    </ion-grid>
+
+
+
+  </ion-list>
+
+</ion-content>
